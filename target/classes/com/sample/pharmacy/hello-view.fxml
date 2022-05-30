@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sample.pharmacy.LoginController">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="238.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="500.0" fitWidth="344.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../img/logo2.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="96.0" layoutY="38.0" text="In the" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="55.0" />
+               </font>
+            </Label>
+            <Label layoutX="106.0" layoutY="400.0" text="Loop" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="52.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="364.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane fx:id="LoginPane" prefHeight="500.0" prefWidth="360.0" style="-fx-background-color: #ffff;">
+               <children>
+                  <Label layoutX="123.0" layoutY="41.0" text="Login" textFill="#5271fe">
+                     <font>
+                        <Font name="Segoe UI" size="50.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="usernameField" cache="true" layoutX="107.0" layoutY="148.0" prefHeight="44.0" prefWidth="195.0" promptText="Username" style="-fx-border-color: #5271fe; -fx-border-width: 0 0 2; -fx-background-color: transparent;">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </TextField>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="53.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../img/icons8-user-60.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="51.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../img/icons8-lock-48.png" />
+                     </image>
+                  </ImageView>
+                  <PasswordField fx:id="passwordField" layoutX="107.0" layoutY="235.0" prefHeight="44.0" prefWidth="195.0" promptText="Password" style="-fx-border-color: #5271fe; -fx-border-width: 0 0 2; -fx-background-color: transparent;">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </PasswordField>
+                  <Button fx:id="enterButton" alignment="CENTER" layoutX="58.0" layoutY="323.0" mnemonicParsing="false" onAction="#enterButtonOnActive" prefHeight="47.0" prefWidth="252.0" style="-fx-background-color: #5271fe; -fx-background-radius: 7; -fx-border-radius: 7;" text="Sign In" textFill="#f7f7f7">
+                     <font>
+                        <Font name="Segoe UI" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="loginSignUpButton" alignment="CENTER" layoutX="58.0" layoutY="404.0" mnemonicParsing="false" onAction="#loginSignUpButtonActive" prefHeight="47.0" prefWidth="252.0" style="-fx-background-color: #5271fe; -fx-border-radius: 7; -fx-background-radius: 7;" text="Sign Up" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI" size="20.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="loginErrorMessage" alignment="CENTER" layoutX="58.0" layoutY="109.0" textFill="RED">
+                     <font>
+                        <Font name="SansSerif Regular" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="Exit1" fitHeight="25.0" fitWidth="25.0" layoutX="332.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../img/remove-button.png" />
+                     </image>
+                  </ImageView>
+                  <Separator layoutX="55.0" layoutY="387.0" prefWidth="257.0" />
+                  <Label alignment="CENTER" layoutX="169.0" layoutY="377.0" prefHeight="23.0" prefWidth="31.0" style="-fx-background-color: #ffff;" text="Or">
+                     <font>
+                        <Font name="Segoe UI" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="RegistrationPane" prefHeight="500.0" prefWidth="360.0" visible="false">
+               <children>
+                  <Label layoutX="46.0" layoutY="41.0" text="Registration" textFill="#5271fe">
+                     <font>
+                        <Font name="SansSerif Regular" size="50.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="Exit" fitHeight="25.0" fitWidth="25.0" layoutX="332.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../img/remove-button.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="signUsernameField" cache="true" layoutX="90.0" layoutY="131.0" prefHeight="44.0" prefWidth="205.0" promptText="Username" style="-fx-border-color: #5271fe; -fx-border-width: 0 0 2; -fx-background-color: transparent;">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="emailField" cache="true" layoutX="90.0" layoutY="194.0" prefHeight="44.0" prefWidth="205.0" promptText="Email" style="-fx-border-color: #5271fe; -fx-border-width: 0 0 2; -fx-background-color: transparent;">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="signPasswordField" layoutX="90.0" layoutY="262.0" prefHeight="44.0" prefWidth="205.0" promptText="Password" style="-fx-border-color: #5271fe; -fx-border-width: 0 0 2; -fx-background-color: transparent;">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </PasswordField>
+                  <PasswordField fx:id="confirmPasswordField" layoutX="90.0" layoutY="326.0" prefHeight="44.0" prefWidth="205.0" promptText="Confirm password" style="-fx-border-color: #5271fe; -fx-border-width: 0 0 2; -fx-background-color: transparent;">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </PasswordField>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="40.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../img/icons8-user-60.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="37.0" layoutY="267.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../img/icons8-lock-48.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="37.0" layoutY="331.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../img/icons8-lock-48.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="40.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../img/icons8-mail-48.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="signUpButton" layoutX="44.0" layoutY="415.0" mnemonicParsing="false" onAction="#signUpButtonOnActive" prefHeight="47.0" prefWidth="257.0" style="-fx-background-color: #5271fe; -fx-background-radius: 7; -fx-border-radius: 7;" text="Sign Up" textFill="WHITE">
+                     <font>
+                        <Font name="SansSerif Regular" size="20.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="signErrorMessage" layoutX="111.0" layoutY="111.0" textFill="RED">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
