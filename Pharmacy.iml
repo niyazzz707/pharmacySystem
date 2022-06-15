@@ -51,7 +51,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="javafx-sdk-18" level="application" />
     <orderEntry type="library" name="jfoenix-9.0.10" level="project" />
+    <orderEntry type="library" name="javafx-sdk-18" level="project" />
   </component>
 </module>
